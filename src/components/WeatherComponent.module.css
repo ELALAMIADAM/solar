@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --background: #171717;
+  --text-color: #fff;
+  --secondary-bg: #1e1e1e;
+}
+
+.container {
+  background: var(--background);
+  color: var(--text-color);
+  padding: 0.5rem;  /* Reduced padding */
+  width: 90%;  /* Adjust to full width for better responsiveness */
+  max-width: 300px;  /* Set a max-width to control size */
+  margin: 2rem auto;  /* Reduced margin */
+  border-radius: 15px;  /* Slightly smaller border radius */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;  /* Add space between header and body */
+}
+
+.search {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background: var(--secondary-bg);
+  border-radius: 10px;  /* Smaller border radius */
+  padding: 0.5rem;
+}
+
+.input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: var(--text-color);
+  padding: 0.25rem 0.5rem;  /* Reduced padding */
+  font-size: 0.875rem;  /* Reduced font size */
+}
+
+.search button {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.units {
+  font-size: 1rem;  /* Reduced font size */
+}
+
+.units span {
+  cursor: pointer;
+}
+
+.units .active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.body {
+  text-align: center;
+}
+
+.datetime {
+  margin-bottom: 1rem;  /* Reduced margin */
+  font-size: 12px;  /* Reduced font size */
+}
+
+.forecast {
+  background: var(--secondary-bg);
+  display: inline-block;
+  padding: 0.25rem 0.5rem;  /* Reduced padding */
+  border-radius: 20px;  /* Smaller border radius */
+}
+
+.icon {
+  width: 75px;  /* Reduced image size */
+}
+
+.temperature {
+  font-size: 1.25rem;  /* Reduced font size */
+}
+
+.minmax {
+  display: flex;
+  justify-content: center;
+}
+
+.minmax p {
+  font-size: 12px;  /* Reduced font size */
+  margin: 0.25rem;  /* Reduced margin */
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5rem;  /* Reduced grid gap */
+  margin-top: 2rem;  /* Reduced margin */
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: var(--secondary-bg);
+  padding: 0.5rem;  /* Reduced padding */
+  border-radius: 5px;  /* Smaller border radius */
+}
+
+.card i {
+  font-size: 1rem;  /* Reduced icon size */
+  margin-right: 0.5rem;  /* Reduced margin */
+}
+
+.card p {
+  font-size: 12px;  /* Reduced font size */
+}
+
+@media (max-width: 936px) {
+  .container {
+    width: 80%;  /* Reduced width for smaller screens */
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .units {
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .info {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,74 @@
+.container_LIST {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.filter {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.filter form {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Add some spacing between elements */
+}
+
+.filter label {
+  font-weight: bold;
+}
+
+.filter input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 150px; /* Fixed width for inputs */
+}
+
+.filter button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filter button:hover {
+  background-color: #0056b3;
+}
+
+
+.signalSlavesTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.signalSlavesTable th,
+.signalSlavesTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.signalSlavesTable th {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.signalSlavesTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.signalSlavesTable tr:hover {
+  background-color: #ddd;
+}

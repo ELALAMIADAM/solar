@@ -1,0 +1,31 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f2f2f2; /* slightly lighter background */
+  color: #333; /* darker text color for better readability */
+  font-family: Tahoma, Arial, sans-serif; /* added fallback fonts */
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+.footer a {
+  color: #fff; /* White text color for links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Add underline on hover for links */
+}
+
+.address {
+  text-align: center;
+  margin-top: 10px; /* Add top margin for spacing */
+}
